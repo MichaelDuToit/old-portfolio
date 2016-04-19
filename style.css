@@ -12,8 +12,7 @@ body {
 .nav {
   display:block;
   min-width:100%;
-  left:0;
-  top:0;
+  border-bottom:0.2em solid grey;
 }
 .nav__menu {
   list-style:none;
@@ -23,44 +22,61 @@ body {
 .nav__menu__items {
   display:inline-block;
   text-align:left;
-  padding:0em 0.6em;
+  padding:0.5em 0.7em;
 }
 /* Introduction */
 .intro {
   display:block;
   min-width:100%;
+  padding:3.8% 0%;
 }
 /* Skill Section */
 .skillset {
   display:block;
   width:100%;
+  padding-bottom:2.5%;
 }
 /* Project Section */
 .project {
   display:block;
-  min-width:100%;
   width:100%;
+  padding-bottom:2.5%;
   }
 .project__row {
   display:block;
   min-width:100%;
-  padding:0;
+  overflow:hidden;
   }
-.project__row__project--larger {
+.project__row a {
+  text-decoration:none;
+}
+.project__row a:hover, .project__row a:focus {
+  font-style: italic;
+}
+.project__row__project--larger, .project__row__project--smaller {
   display:inline-block;
+  float:left;
+  border-top:0.2em solid grey;
+}
+.project__row__project--larger {
   width:55%;
   max-width:55%;
-  float:left;
 }
 .project__row__project--smaller {
-  display:inline-block;
   width:45%;
   max-width:45%;
-  float:left;
+}
+.project__row__project--larger img, .project__row__project--smaller img {
+  width:100%;
+  height:18em;
+  display:block;
+  border:none;
 }
 
 /* Footer/Contacts */
 .footer {
   display:block;
   min-width:100%;
+  padding-bottom:2.5%;
+  border-top:0.2em solid grey;
 }
