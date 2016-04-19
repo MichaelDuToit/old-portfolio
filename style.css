@@ -1,0 +1,66 @@
+* {
+  padding:0;
+  margin:0;
+}
+body {
+  display:block;
+  min-width:100%;
+  min-height:100%;
+  text-align:center;
+}
+/* Navigation */
+.nav {
+  display:block;
+  min-width:100%;
+  left:0;
+  top:0;
+}
+.nav__menu {
+  list-style:none;
+  text-align:left;
+  margin-left:2.5%;
+}
+.nav__menu__items {
+  display:inline-block;
+  text-align:left;
+  padding:0em 0.6em;
+}
+/* Introduction */
+.intro {
+  display:block;
+  min-width:100%;
+}
+/* Skill Section */
+.skillset {
+  display:block;
+  width:100%;
+}
+/* Project Section */
+.project {
+  display:block;
+  min-width:100%;
+  width:100%;
+  }
+.project__row {
+  display:block;
+  min-width:100%;
+  padding:0;
+  }
+.project__row__project--larger {
+  display:inline-block;
+  width:55%;
+  max-width:55%;
+  float:left;
+}
+.project__row__project--smaller {
+  display:inline-block;
+  width:45%;
+  max-width:45%;
+  float:left;
+}
+
+/* Footer/Contacts */
+.footer {
+  display:block;
+  min-width:100%;
+}
