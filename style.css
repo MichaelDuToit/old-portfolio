@@ -7,12 +7,24 @@ body {
   min-width:100%;
   min-height:100%;
   text-align:center;
+  background-color:#0369B8;
+  font-family:sans-serif;
+  font-size:16px;
+  color:#fff;
+}
+a, a:visited {
+  color:#fff;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  font-style:italic;
+  text-decoration: none;
 }
 /* Navigation */
 .nav {
   display:block;
   min-width:100%;
-  border-bottom:0.2em solid grey;
+  border-bottom:0.2em solid #C6924C;
 }
 .nav__menu {
   list-style:none;
@@ -22,26 +34,38 @@ body {
 .nav__menu__items {
   display:inline-block;
   text-align:left;
-  padding:0.5em 0.7em;
+  padding:0.7em 0.9em;
+  font-weight:bold;
 }
+a li.nav__menu__items:hover, a li.nav__menu__items:focus {
+  background-color:#2C8AD2;
+  text-decoration: underline;
+  border-left:0.2em solid #C6924C;
+  border-right:0.2em solid #C6924C
+}
+
 /* Introduction */
 .intro {
   display:block;
   min-width:100%;
   padding:3.8% 0%;
+  border-bottom:0.2em solid #C6924C;
 }
 /* Skill Section */
 .skillset {
   display:block;
   width:100%;
-  padding-bottom:2.5%;
+  padding:1.5% 0% 2.5% 0%;
+  border-bottom:0.2em solid #C6924C;
 }
 /* Project Section */
 .project {
   display:block;
   width:100%;
-  padding-bottom:2.5%;
   }
+.project h2 {
+  padding:0.8% 0%;
+}
 .project__row {
   display:block;
   min-width:100%;
@@ -55,28 +79,42 @@ body {
 }
 .project__row__project--larger, .project__row__project--smaller {
   display:inline-block;
+  box-sizing: border-box;
   float:left;
-  border-top:0.2em solid grey;
+  text-align: center;
+  border-top:0.2em solid #C6924C;
+}
+.project__row__project--larger:nth-child(odd), .project__row__project--smaller:nth-child(odd){
+  border-right:0.2em solid #C6924C;
 }
 .project__row__project--larger {
-  width:55%;
-  max-width:55%;
+  width:53%;
+  max-width:53%;
 }
 .project__row__project--smaller {
-  width:45%;
-  max-width:45%;
+  width:47%;
+  max-width:47%;
 }
 .project__row__project--larger img, .project__row__project--smaller img {
   width:100%;
   height:18em;
   display:block;
   border:none;
+  margin-bottom:0.3em;
+}
+.project__row__project--larger p, .project__row__project--smaller p {
+margin:0.5% 3% 2% 3%;
 }
 
 /* Footer/Contacts */
 .footer {
   display:block;
   min-width:100%;
-  padding-bottom:2.5%;
-  border-top:0.2em solid grey;
+  padding-top:4%;
+  padding-bottom:4%;
+  border-top:0.2em solid #C6924C;
+}
+.footer a {
+  font-size:1.05em;
+  line-height:1.4em;
 }
