@@ -110,6 +110,7 @@ a li.nav__menu__items:hover, a li.nav__menu__items:focus {
   padding:0;
   width:6em;
   border-bottom:0.5em solid #fff;
+  box-shadow:0em 0em 1em 0em red;
 }
 .arrowLeft {
   transform: rotate(45deg);
