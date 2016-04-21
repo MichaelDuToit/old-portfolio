@@ -9,66 +9,79 @@
 	<link href="style.css" rel="stylesheet" />
 </head>
 <body>
-	<nav class="nav">
-		<ul class="nav__menu">
-			<a href="#"><li class="nav__menu__items">Home</li></a>
-			<a href="#"><li class="nav__menu__items">Skills</li></a>
-			<a href="#"><li class="nav__menu__items">Projects</li></a>
-      <a href="#"><li class="nav__menu__items">Contact</li></a>
-		</ul>
-	</nav>
-  <section class="intro">
-    <h1>Michael Du Toit</h1>
-    <u><em>Web Developer. Runner. Dreamer</em></u>
-  </section>
-  <section class="skillset">
-		<h2>Skill Set</h2>
-	  <h3>Languages</h3>
-		<h4>Fluent</h4>
-		<span>HTML5, CSS/CSS3, SASS (.scss)</span><br/><br/>
-		<h4>Basics</h4>
-	  <span>JavaScript, PHP</span><br/><br/>
-		<h4>Other</h4>
-		Git, GitHub<br/>
-	</section>
-  <section class="project">
-		<h2>Projects</h2>
-  	<div class="project__row">
-  		<div class="project__row__project--larger">
-          <a href="#">
-          <img src="img/office.jpeg"/>
-          <h4>Because everyone needs an office.</h4></a>
-          <p>Made with left-click save image.</p>
-  		</div>
-      <div class="project__row__project--smaller">
-          <a href="#">
-          <img src="img/port1.jpg"/>
-          <h4>Project Name</h4></a>
-          <p>My other portifolio playground. Made with only HTML and CSS.</p>
-  		</div>
-  	</div>
-  	<div class="project__row">
-  		<div class="project__row__project--smaller">
-        <a href="#">
-        <img src="img/jsCountdown.jpg"/>
-        <h4>JavaScript Countdown to Bash release</h4></a>
-        <p>Little JavaScript project that countdowns from the current date &amp; time to a future date and time.</p>
-  		</div>
-  		<div class="project__row__project--larger">
-        <a href="#">
-        <img src="img/TUH.png"/>
-        <h4>Trentham United Harriers &amp; Walkers</h4></a>
-        <p>Built with HTML, CSS, JavaScript and PHP. Also uses the Facebook JS plugin.</p>
-  		</div>
-		</div>
-  </section>
-  <footer class="footer">
-    <p>
-			<h2>Contact</h2>
-			<a href="http://www.github.com/MichaelDuToit" target="_blank">Github - MichaelDuToit</a><br/>
-			<a href="https://www.linkedin.com/in/michael-du-toit-216404107" target="_blank">Linkedin - Michael Du Toit</a><br/>
-			<a href="mailto:dutoitstar@gmail.com">Email - dutoitstar@gmail.com</a>
-		</p>
-  </footer>
+	<div id="background-image"></div>
+	<div id="opacity-layer"></div>
+	<div id="content-layer">
+		<nav class="nav">
+			<ul class="nav__menu">
+				<a href="#home"><li class="nav__menu__items">Home</li></a>
+				<a href="#skillset"><li class="nav__menu__items">Skills</li></a>
+				<a href="#projects"><li class="nav__menu__items">Projects</li></a>
+	      <a href="#contact"><li class="nav__menu__items">Contact</li></a>
+			</ul>
+		</nav><a name="home"></a>
+	  <section class="intro">
+			<p class="heading">
+		    <h1>Michael Du Toit</h1>
+		    <u><em>Web Developer. Runner. Dreamer</em></u>
+			</p>
+			<div class="arrowBlock">
+				<div class="arrowLeft"></div>
+				<div class="arrowRight"></div>
+			</div>
+	  </section>
+		<a name="skillset"></a>
+	  <section class="skillset">
+			<h2>Skill Set</h2>
+		  <h3>Languages</h3>
+			<h4>Fluent</h4>
+			<span>HTML5, CSS/CSS3, SASS (.scss)</span><br/><br/>
+			<h4>Basics</h4>
+		  <span>JavaScript, PHP</span><br/><br/>
+			<h4>Other</h4>
+			Git, GitHub<br/>
+		</section>
+		<a name="projects"></a>
+	  <section class="project">
+			<h2>Projects</h2>
+	  	<div class="project__row">
+	  		<div class="project__row__project--larger">
+	          <a href="#">
+	          <img src="img/office.jpeg"/>
+	          <h4>Because everyone needs an office.</h4></a>
+	          <p>Made with left-click save image.</p>
+	  		</div>
+	      <div class="project__row__project--smaller">
+	          <a href="#">
+	          <img src="img/port1.jpg"/>
+	          <h4>Project Name</h4></a>
+	          <p>My other portifolio playground. Made with only HTML and CSS.</p>
+	  		</div>
+	  	</div>
+	  	<div class="project__row">
+	  		<div class="project__row__project--smaller">
+	        <a href="#">
+	        <img src="img/jsCountdown.jpg"/>
+	        <h4>JavaScript Countdown to Bash release</h4></a>
+	        <p>Little JavaScript project that countdowns from the current date &amp; time to a future date and time.</p>
+	  		</div>
+	  		<div class="project__row__project--larger">
+	        <a href="#">
+	        <img src="img/TUH.png"/>
+	        <h4>Trentham United Harriers &amp; Walkers</h4></a>
+	        <p>Built with HTML, CSS, JavaScript and PHP. Also uses the Facebook JS plugin.</p>
+	  		</div>
+			</div>
+	  </section>
+	  <footer class="footer">
+	    <p>
+				<h2>Contact</h2>
+				<a href="http://www.github.com/MichaelDuToit" target="_blank">Github - MichaelDuToit</a><br/>
+				<a href="https://www.linkedin.com/in/michael-du-toit-216404107" target="_blank">Linkedin - Michael Du Toit</a><br/>
+				<a href="mailto:dutoitstar@gmail.com">Email - dutoitstar@gmail.com</a>
+			</p>
+				<a name="contact"></a>
+	  </footer>
+	</div>
 </body>
 </html>
