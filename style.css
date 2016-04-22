@@ -64,7 +64,7 @@ a:hover, a:focus {
   top:0;
   min-width:100%;
   z-index:25;
-  border-bottom:0.2em solid #cfa265;
+  border-bottom:0.3em solid #fff;
   background:#048ffb;
   opacity:0.95;
   line-height: 1.2em;
@@ -85,8 +85,8 @@ a:hover, a:focus {
 a li.nav__menu__items:hover, a li.nav__menu__items:focus {
   background-color:#2C8AD2;
   text-decoration: underline;
-  border-left:0.2em solid #cfa265;
-  border-right:0.2em solid #cfa265
+  border-left:0.2em solid #fff;
+  border-right:0.2em solid #fff
 }
 
 /* Introduction */
@@ -94,9 +94,11 @@ a li.nav__menu__items:hover, a li.nav__menu__items:focus {
   display:block;
   min-width:100%;
   height:75vh;
+  min-height:100%;
   padding:9% 0% 0% 0% ;
-  border-bottom:0.2em solid #cfa265;
+  /*border-bottom:0.2em solid #cfa265;*/
   margin-top:1.2em;
+  border-bottom:0.3em solid white;
 }
 .arrowBlock {
   position:relative;
@@ -107,7 +109,7 @@ a li.nav__menu__items:hover, a li.nav__menu__items:focus {
 }
 @keyframes arrowShake {
   0% {top:65%;}
-  99% {top:73%;}
+  80% {top:73%;}
   100% {top:65%;}
 }
 .arrowLeft, .arrowRight {
@@ -130,8 +132,8 @@ a li.nav__menu__items:hover, a li.nav__menu__items:focus {
 .skillset {
   display:block;
   width:100%;
-  padding:1.5% 0% 2.5% 0%;
-  border-bottom:0.2em solid #cfa265;
+  padding:2.5% 0% 2.5% 0%;
+  border-bottom:0.3em solid #fff;
 }
 /* Project Section */
 .project {
@@ -139,7 +141,7 @@ a li.nav__menu__items:hover, a li.nav__menu__items:focus {
   width:100%;
   }
 .project h2 {
-  padding:0.8% 0%;
+  padding:1% 0%;
 }
 .project__row {
   display:block;
@@ -157,10 +159,10 @@ a li.nav__menu__items:hover, a li.nav__menu__items:focus {
   box-sizing: border-box;
   float:left;
   text-align: center;
-  border-top:0.2em solid #cfa265;
+  border-top:0.3em solid #fff;
 }
 .project__row__project--larger:nth-child(odd), .project__row__project--smaller:nth-child(odd){
-  border-right:0.2em solid #cfa265;
+  border-right:0.2em solid #fff;
 }
 .project__row__project--larger {
   width:53%;
@@ -187,9 +189,24 @@ margin:0.5% 3% 2% 3%;
   min-width:100%;
   padding-top:4%;
   padding-bottom:4%;
-  border-top:0.2em solid #cfa265;
+  border-top:0.3em solid #fff;
 }
 .footer a {
   font-size:1.05em;
   line-height:1.4em;
+}
+
+@media all and (max-width:750px){
+  .intro {
+    height:90vh;
+    min-height:100%;
+  }
+  .project__row__project--smaller, .project__row__project--larger {
+    display:block;
+    width:100%;
+    max-width:100%;
+  }
+  .project__row__project--larger:nth-child(odd), .project__row__project--smaller:nth-child(odd){
+    border-right:0;
+  }
 }
