@@ -103,6 +103,12 @@ a li.nav__menu__items:hover, a li.nav__menu__items:focus {
   top:65%;
   display:block;
   height:6em;
+  animation: arrowShake 3s infinite;
+}
+@keyframes arrowShake {
+  0% {top:65%;}
+  99% {top:73%;}
+  100% {top:65%;}
 }
 .arrowLeft, .arrowRight {
   display:inline-block;
