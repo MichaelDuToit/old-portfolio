@@ -217,11 +217,16 @@ a li.nav__menu__items:hover, a li.nav__menu__items:focus {
   border-top:0.3em solid #fff;
 }
 .footer a {
+  display:inline-block;
   font-size:1.05em;
-  line-height:1.4em;
+  margin-bottom:0.4em;
+  border-bottom:0.15em dotted #fff;
 }
 .footer a[href="#pagetop"] {
-  line-height:3em;
+  margin-top:1em;
+}
+.footer a:focus, .footer a:active {
+  border:0.15em dotted #fff;
 }
 /******************
 *   Media Queries *
