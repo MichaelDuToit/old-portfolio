@@ -139,14 +139,14 @@ a li.nav__menu__items:hover, a li.nav__menu__items:focus {
   animation: arrowShake 2.8s infinite;
 }
 @-webkit-keyframes arrowShake {
-  0% {top:50%;}
-  80% {top:58%;}
-  100% {top:50%;}
+  0% {top:38%;}
+  80% {top:46%;}
+  100% {top:38%;}
 }
 @keyframes arrowShake {
-  0% {top:50%;}
-  80% {top:58%;}
-  100% {top:50%;}
+  0% {top:38%;}
+  80% {top:46%;}
+  100% {top:38%;}
 }
 .arrowLeft, .arrowRight {
   display:inline-block;
