@@ -7,11 +7,31 @@
 	<meta name="author" content="Michael Du Toit" />
 	<title>Michael Du Toit</title>
 	<link href="style.css" rel="stylesheet" />
+	<script>
+	function mobileMenu(){
+			var navMenu = document.querySelector('.nav__menu');
+			if (navMenu.style.display == "block"){
+				navMenu.style.display = "none";
+			}
+			else {
+				navMenu.style.display = "block";
+			}
+			navMenu.addEventListener('click', mobileMenu);
+		}
+	function initMobileMenu(){
+		if(window.clientWidth > 750){
+			mobileMenu();
+		}
+	}
+	window.addEventListener('resize', initMobileMenu);
+	</script>
 </head>
 <body>
 	<div id="background-image"></div>
 	<div id="opacity-layer"></div>
+	<main id="content-layer">
 	<nav class="nav"><a name="pagetop"></a>
+		<a class="nav__mobile__menu" onclick="mobileMenu()">Menu</a>
 		<ul class="nav__menu">
 			<a href="#pagetop"><li class="nav__menu__items">Home</li></a>
 			<a href="#skillset"><li class="nav__menu__items">Skills</li></a>
@@ -20,7 +40,6 @@
 			<a href="#contact"><li class="nav__menu__items">Contact</li></a>
 		</ul>
 	</nav>
-	<main id="content-layer">
 	  <section class="intro">
 			<p class="heading">
 		    <h1>Michael Du Toit</h1>
@@ -59,7 +78,7 @@
 	          <img src="img/port1.jpg"/>
 	          <h4>Project Name</h4></a>
 	          <p>My other portifolio playground. Made with only HTML and CSS.</p>-->
-						<p class="project__row__project--more">Make sure to check my <a href="http://www.github.com/MichaelDuToit" target="_blank">GitHub</a> and <a href="http://www.codepen.io/Michaeldt" target="_blank">Codepen</a> for more smaller side projects!</p>
+						<p class="project__row__project--more">Make sure to check my <em><a href="http://www.github.com/MichaelDuToit" target="_blank">GitHub</a></em> and <em><a href="http://www.codepen.io/Michaeldt" target="_blank">Codepen</a></em> for more smaller side projects!</p>
 	  			</div>
 	  </section>
 		<a name="projects"></a>
